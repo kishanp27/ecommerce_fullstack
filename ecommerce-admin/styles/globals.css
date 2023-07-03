@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+img, .drag {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+img:hover, .drag {
+  cursor: pointer;
+}
+
+input, textarea, select {
+  @apply border border-gray-200 rounded-sm w-full py-2 px-3;
+  @apply mb-2;
+}
+
+input:focus, textarea:focus {
+  @apply border-gray-300;
+}
+
+h1 {
+  @apply text-gray-800 mb-4 text-xl font-medium;
+}
+
+label {
+  @apply text-gray-600 text-sm;
+}
+
+.btn-primary {
+  @apply bg-primary text-white px-4 rounded-sm py-1;
+}
+
+table.basic {
+  @apply w-full bg-white rounded-sm shadow-md;
+}
+
+table.basic thead tr td,
+table.basic thead tr th
+{
+  @apply text-sm text-gray-500 uppercase border-b border-gray-200 px-4 py-2;
+}
+
+table.basic tr td {
+  @apply px-4 py-1;
+}
+
+table.basic a {
+  @apply bg-white text-black border  text-sm py-1 px-3 rounded-sm inline-flex gap-1 mr-2 items-center;
+}
+
